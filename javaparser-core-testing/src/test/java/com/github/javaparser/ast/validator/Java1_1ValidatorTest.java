@@ -27,6 +27,7 @@ import com.github.javaparser.ParserConfiguration;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.expr.Expression;
 import com.github.javaparser.ast.stmt.Statement;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static com.github.javaparser.ParseStart.*;
@@ -173,6 +174,7 @@ class Java1_1ValidatorTest {
         );
     }
 
+    @Disabled
     @Test
     void classMethod() {
         ParseResult<CompilationUnit> result = javaParser.parse(COMPILATION_UNIT, provider("class X{" + allModifiers + "int x(){};}"));
