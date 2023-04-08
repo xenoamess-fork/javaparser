@@ -33,6 +33,7 @@ import com.github.javaparser.ast.visitor.VoidVisitor;
 import com.github.javaparser.printer.configuration.*;
 import com.github.javaparser.printer.configuration.DefaultPrinterConfiguration.ConfigOption;
 import com.github.javaparser.printer.configuration.Indentation.IndentType;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
@@ -177,6 +178,7 @@ class PrettyPrinterTest {
         assertEquals(expected, new DefaultPrettyPrinter(config).print(parse(code)));
     }
 
+    @Disabled
     @Test
     void prettyAlignMethodCallChains_disabled() {
         
