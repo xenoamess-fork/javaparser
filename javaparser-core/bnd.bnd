@@ -45,6 +45,8 @@ Bundle-SymbolicName: com.github.javaparser.javaparser-core
 # We prefer not setting a version as we don't follow OSGi version semantics
 -nodefaultversion: true
 
+-fixupmessages "Classes found in the wrong directory"; restrict:=error; is:=warning
+
 # Fix broken link on docs
 # https://github.com/javaparser/javaparser/issues/3947
 # https://github.com/bndtools/bnd/tree/master/maven-plugins/bnd-maven-plugin 
